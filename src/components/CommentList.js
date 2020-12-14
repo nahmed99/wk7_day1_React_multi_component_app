@@ -11,10 +11,11 @@ const CommentList = ({comments}) => {
     // Save that to a variable
     // Render that in this component
 
-    const commentNodes = comments.map((comment) => {  //commentNodes is an array of JSX
+    const commentNodes = comments.map((comment) => {  //commentNodes is an array of JSX - you send the key to help React optimise...
         return (
             <Comment author={comment.author} 
-            description={comment.description} />
+            description={comment.description}
+            key={comment.id} />
         )
     });
 
