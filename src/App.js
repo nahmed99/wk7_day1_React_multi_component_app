@@ -1,9 +1,9 @@
+import CommentBox from './containers/CommentBox';
+
 
 function App() {
   return (
-    <h1>
-      Kidda?
-    </h1>
+    <CommentBox />
   );
 }
 
