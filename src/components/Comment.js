@@ -1,7 +1,7 @@
-const Comment = ({author, description, year}) => {
+const Comment = ({author, description}) => {
     return (
         <>
-            <p>{author} wrote: {description} in {year}</p>
+            <p>{author} wrote: {description}.</p>
         </>
     );
 }
